@@ -15,10 +15,6 @@
 		C35B6A422072A71E0075E822 /* restApiJsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A412072A71E0075E822 /* restApiJsonTests.swift */; };
 		C35B6A4D2072A71F0075E822 /* restApiJsonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A4C2072A71F0075E822 /* restApiJsonUITests.swift */; };
 		C35B6A5B2075018D0075E822 /* SqliteToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A5A2075018D0075E822 /* SqliteToJson.swift */; };
-		C35B6A5E207501A30075E822 /* ChangesObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A5C207501A30075E822 /* ChangesObservable.swift */; };
-		C35B6A5F207501A30075E822 /* DatabaseRegionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A5D207501A30075E822 /* DatabaseRegionObserver.swift */; };
-		C35B6A6220780E880075E822 /* Request+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A6020780E870075E822 /* Request+Rx.swift */; };
-		C35B6A6320780E880075E822 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A6120780E880075E822 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +49,6 @@
 		C35B6A4C2072A71F0075E822 /* restApiJsonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restApiJsonUITests.swift; sourceTree = "<group>"; };
 		C35B6A4E2072A71F0075E822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35B6A5A2075018D0075E822 /* SqliteToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteToJson.swift; sourceTree = "<group>"; };
-		C35B6A5C207501A30075E822 /* ChangesObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangesObservable.swift; sourceTree = "<group>"; };
-		C35B6A5D207501A30075E822 /* DatabaseRegionObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseRegionObserver.swift; sourceTree = "<group>"; };
-		C35B6A6020780E870075E822 /* Request+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Request+Rx.swift"; sourceTree = "<group>"; };
-		C35B6A6120780E880075E822 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				C35B6A2C2072A71E0075E822 /* AppDelegate.swift */,
-				C35B6A5C207501A30075E822 /* ChangesObservable.swift */,
-				C35B6A5D207501A30075E822 /* DatabaseRegionObserver.swift */,
 				C35B6A2E2072A71E0075E822 /* ViewController.swift */,
 				C35B6A5A2075018D0075E822 /* SqliteToJson.swift */,
-				C35B6A6020780E870075E822 /* Request+Rx.swift */,
-				C35B6A6120780E880075E822 /* Result.swift */,
 				C35B6A302072A71E0075E822 /* Main.storyboard */,
 				C35B6A332072A71E0075E822 /* Assets.xcassets */,
 				C35B6A352072A71E0075E822 /* LaunchScreen.storyboard */,
@@ -274,11 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C35B6A5E207501A30075E822 /* ChangesObservable.swift in Sources */,
-				C35B6A6220780E880075E822 /* Request+Rx.swift in Sources */,
-				C35B6A5F207501A30075E822 /* DatabaseRegionObserver.swift in Sources */,
 				C35B6A2F2072A71E0075E822 /* ViewController.swift in Sources */,
-				C35B6A6320780E880075E822 /* Result.swift in Sources */,
 				C35B6A2D2072A71E0075E822 /* AppDelegate.swift in Sources */,
 				C35B6A5B2075018D0075E822 /* SqliteToJson.swift in Sources */,
 			);
