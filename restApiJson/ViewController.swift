@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class ViewController: UIViewController {
     
     //the json file url
@@ -34,7 +32,7 @@ class ViewController: UIViewController {
         
         URLSession.shared.dataTask(with: (url as URL?)!, completionHandler: {(data, response, error) -> Void in
             
-            print(data)
+            print(data as Any)
 
             if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
                 
