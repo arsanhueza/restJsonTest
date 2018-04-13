@@ -18,6 +18,8 @@
 		C35B6A5B2075018D0075E822 /* SqliteToJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A5A2075018D0075E822 /* SqliteToJson.swift */; };
 		C35B6A71207FB2050075E822 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A70207FB2050075E822 /* AppDatabase.swift */; };
 		C35B6A73207FB2250075E822 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A72207FB2250075E822 /* Person.swift */; };
+		C35B6A7620815FE90075E822 /* SimplePersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A7420815FE90075E822 /* SimplePersonsViewController.swift */; };
+		C35B6A7720815FE90075E822 /* PersonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A7520815FE90075E822 /* PersonsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		C35B6A5A2075018D0075E822 /* SqliteToJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteToJson.swift; sourceTree = "<group>"; };
 		C35B6A70207FB2050075E822 /* AppDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 		C35B6A72207FB2250075E822 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C35B6A7420815FE90075E822 /* SimplePersonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePersonsViewController.swift; sourceTree = "<group>"; };
+		C35B6A7520815FE90075E822 /* PersonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsViewController.swift; sourceTree = "<group>"; };
 		DB7510740D915B4E38C2BD66 /* Pods_restApiJson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_restApiJson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,9 +131,11 @@
 		C35B6A2B2072A71E0075E822 /* restApiJson */ = {
 			isa = PBXGroup;
 			children = (
-				C35B6A70207FB2050075E822 /* AppDatabase.swift */,
+				C35B6A7520815FE90075E822 /* PersonsViewController.swift */,
+				C35B6A7420815FE90075E822 /* SimplePersonsViewController.swift */,
 				C35B6A2C2072A71E0075E822 /* AppDelegate.swift */,
 				C35B6A2E2072A71E0075E822 /* ViewController.swift */,
+				C35B6A70207FB2050075E822 /* AppDatabase.swift */,
 				C35B6A5A2075018D0075E822 /* SqliteToJson.swift */,
 				C35B6A72207FB2250075E822 /* Person.swift */,
 				C35B6A302072A71E0075E822 /* Main.storyboard */,
@@ -350,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35B6A73207FB2250075E822 /* Person.swift in Sources */,
+				C35B6A7720815FE90075E822 /* PersonsViewController.swift in Sources */,
+				C35B6A7620815FE90075E822 /* SimplePersonsViewController.swift in Sources */,
 				C35B6A2F2072A71E0075E822 /* ViewController.swift in Sources */,
 				C35B6A2D2072A71E0075E822 /* AppDelegate.swift in Sources */,
 				C35B6A71207FB2050075E822 /* AppDatabase.swift in Sources */,
