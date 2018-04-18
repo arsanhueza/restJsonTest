@@ -37,7 +37,7 @@ extension SimplePersonsViewController : PersonEditionViewControllerDelegate {
             let controller = segue.destination as! PersonEditionViewController
             controller.title = person.name
             controller.person = person
-            controller.delegate = self // we will save person when back button is tapped
+            controller.delegate = self
             controller.cancelButtonHidden = true
             controller.commitButtonHidden = true
         }
@@ -46,7 +46,7 @@ extension SimplePersonsViewController : PersonEditionViewControllerDelegate {
             let navigationController = segue.destination as! UINavigationController
             let controller = navigationController.viewControllers.first as! PersonEditionViewController
             controller.title = "New Person"
-            controller.person = Person(name: "", score: 0)
+            controller.person = Person(name: "", fecha: "")
         }
     }
     
@@ -55,7 +55,6 @@ extension SimplePersonsViewController : PersonEditionViewControllerDelegate {
     }
     
     @IBAction func cancelPersonEdition(_ segue: UIStoryboardSegue) {
-        // Person creation: cancel button was tapped
     }
     
     @IBAction func commitPersonEdition(_ segue: UIStoryboardSegue) {
@@ -89,7 +88,7 @@ extension SimplePersonsViewController {
     func configure(_ cell: UITableViewCell, at indexPath: IndexPath) {
         let person = persons[indexPath.row]
         cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = abs(person.score) > 1 ? "\(person.score) points" : "0 point"
+        cell.detailTextLabel?.text = abs(person.fecha) > 1 ? "\(person.score) points" : "0 point"
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

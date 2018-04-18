@@ -77,7 +77,7 @@ extension PersonsViewController : PersonEditionViewControllerDelegate {
             let navigationController = segue.destination as! UINavigationController
             let controller = navigationController.viewControllers.first as! PersonEditionViewController
             controller.title = "New Person"
-            controller.person = Person(name: "", score: 0)
+            controller.person = Person(name: "", fecha: "")
         }
     }
     
@@ -120,7 +120,7 @@ extension PersonsViewController {
     func configure(_ cell: UITableViewCell, at indexPath: IndexPath) {
         let person = personsController.record(at: indexPath)
         cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = abs(person.score) > 1 ? "\(person.score) points" : "0 point"
+     //   cell.detailTextLabel?.text = abs(person.fecha) > 1 ? "\(person.score) points" : "0 point"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -154,7 +154,7 @@ extension PersonsViewController {
     fileprivate func configureToolbar() {
         toolbarItems = [
             UIBarButtonItem(title: "Name ⬆︎", style: .plain, target: self, action: .sortByName),
-            UIBarButtonItem(title: "Score ⬇︎", style: .plain, target: self, action: .sortByScore),
+            UIBarButtonItem(title: "fecha ⬇︎", style: .plain, target: self, action: .sortByScore),
             UIBarButtonItem(title: "Randomize", style: .plain, target: self, action: .randomizeScores),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(title: "💣", style: .plain, target: self, action: .stressTest)
@@ -176,7 +176,7 @@ extension PersonsViewController {
         
         try! dbQueue.inTransaction { db in
             for person in try Person.fetchAll(db) {
-                person.score = Person.randomScore()
+                person.fecha = Person.randomFechas()
                 try person.update(db)
             }
             return .commit
@@ -192,12 +192,12 @@ extension PersonsViewController {
                     if try Person.fetchCount(db) == 0 {
                         // Insert persons
                         for _ in 0..<8 {
-                            try Person(name: Person.randomName(), score: Person.randomScore()).insert(db)
+                            try Person(name: Person.randomName(), fecha: Person.randomFechas()).insert(db)
                         }
                     } else {
                         // Insert a person
                         if arc4random_uniform(2) == 0 {
-                            let person = Person(name: Person.randomName(), score: Person.randomScore())
+                            let person = Person(name: Person.randomName(), fecha: Person.randomFechas())
                             try person.insert(db)
                         }
                         // Delete a person
@@ -209,7 +209,7 @@ extension PersonsViewController {
                         // Update some persons
                         for person in try Person.fetchAll(db) {
                             if arc4random_uniform(2) == 0 {
-                                person.score = Person.randomScore()
+                                person.fecha = Person.randomFechas()
                                 try person.update(db)
                             }
                         }

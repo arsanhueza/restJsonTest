@@ -21,7 +21,7 @@ class PersonEditionViewController: UITableViewController {
         if let name = nameTextField.text, !name.isEmpty {
             person.name = name
         }
-        person.score = scoreTextField.text.flatMap { Int($0) } ?? 0
+        person.fecha = scoreTextField.text.flatMap { String($0) } ?? ""
     }
     
     override func viewDidLoad() {
@@ -33,10 +33,10 @@ class PersonEditionViewController: UITableViewController {
         guard isViewLoaded else { return }
         
         nameTextField.text = person.name
-        if person.score == 0 && person.id == nil {
+        if person.fecha.description == "" && person.id == nil {
             scoreTextField.text = ""
         } else {
-            scoreTextField.text = "\(person.score)"
+            scoreTextField.text = "\(person.fecha)"
         }
     
         if cancelButtonHidden {

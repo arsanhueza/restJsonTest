@@ -36,9 +36,9 @@ class ViewController: UIViewController {
 
             if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? NSDictionary {
                 
-                print(jsonObj!.value(forKey: "peliculas")!)
+                print(jsonObj!.value(forKey: "updated")!)
                 
-                if let heroeArray = jsonObj!.value(forKey: "peliculas") as? NSArray {
+                if let heroeArray = jsonObj!.value(forKey: "updated") as? NSArray {
                     for heroe in heroeArray{
                         
                         if let heroeDict = heroe as? NSDictionary {

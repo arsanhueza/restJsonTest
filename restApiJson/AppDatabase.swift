@@ -43,7 +43,7 @@ struct AppDatabase {
         migrator.registerMigration("fixtures") { db in
             // Populate the persons table with random data
             for _ in 0..<8 {
-                try Person(name: Person.randomName(), score: Person.randomScore()).insert(db)
+                try Person(name: Person.randomName(), fecha: Person.randomFechas()).insert(db)
             }
         }
 
