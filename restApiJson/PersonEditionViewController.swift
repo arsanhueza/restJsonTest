@@ -33,7 +33,7 @@ class PersonEditionViewController: UITableViewController {
         guard isViewLoaded else { return }
         
         nameTextField.text = person.name
-        if person.fecha.description == "" && person.id == nil {
+        if !person.fecha && person.id == nil {
             scoreTextField.text = ""
         } else {
             scoreTextField.text = "\(person.fecha)"
