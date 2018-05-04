@@ -81,9 +81,6 @@ extension SimplePersonsViewController : PersonEditionViewControllerDelegate {
     }
 }
 
-
-// MARK: - UITableViewDataSource
-
 extension SimplePersonsViewController {
     func configure(_ cell: UITableViewCell, at indexPath: IndexPath) {
         let person = persons[indexPath.row]
