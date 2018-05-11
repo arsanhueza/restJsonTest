@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8C36A683EFF56D586575B60B /* Pods_restApiJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7510740D915B4E38C2BD66 /* Pods_restApiJson.framework */; };
-		C3018CFB209C9EF400C2BB72 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3018CFA209C9EF400C2BB72 /* Observer.swift */; };
+		C3018D0020A51F8C00C2BB72 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3018CFD20A51F8B00C2BB72 /* JSONData.swift */; };
+		C3018D0120A51F8C00C2BB72 /* ObserverPatternProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3018CFE20A51F8B00C2BB72 /* ObserverPatternProtocols.swift */; };
 		C35B6A2D2072A71E0075E822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A2C2072A71E0075E822 /* AppDelegate.swift */; };
 		C35B6A2F2072A71E0075E822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35B6A2E2072A71E0075E822 /* ViewController.swift */; };
 		C35B6A322072A71E0075E822 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35B6A302072A71E0075E822 /* Main.storyboard */; };
@@ -44,7 +45,8 @@
 /* Begin PBXFileReference section */
 		1D8D178E279D33BEBCFB1AA2 /* Pods-restApiJson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restApiJson.release.xcconfig"; path = "Pods/Target Support Files/Pods-restApiJson/Pods-restApiJson.release.xcconfig"; sourceTree = "<group>"; };
 		8E46C504E3697CA62988F811 /* Pods-restApiJson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-restApiJson.debug.xcconfig"; path = "Pods/Target Support Files/Pods-restApiJson/Pods-restApiJson.debug.xcconfig"; sourceTree = "<group>"; };
-		C3018CFA209C9EF400C2BB72 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		C3018CFD20A51F8B00C2BB72 /* JSONData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		C3018CFE20A51F8B00C2BB72 /* ObserverPatternProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverPatternProtocols.swift; sourceTree = "<group>"; };
 		C35B6A292072A71E0075E822 /* restApiJson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = restApiJson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35B6A2C2072A71E0075E822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35B6A2E2072A71E0075E822 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,8 @@
 		C35B6A2B2072A71E0075E822 /* restApiJson */ = {
 			isa = PBXGroup;
 			children = (
+				C3018CFD20A51F8B00C2BB72 /* JSONData.swift */,
+				C3018CFE20A51F8B00C2BB72 /* ObserverPatternProtocols.swift */,
 				C36DEB2C2086236D00D3BCD8 /* PersonEditionViewController.swift */,
 				C35B6A7520815FE90075E822 /* PersonsViewController.swift */,
 				C35B6A7420815FE90075E822 /* SimplePersonsViewController.swift */,
@@ -147,7 +151,6 @@
 				C35B6A332072A71E0075E822 /* Assets.xcassets */,
 				C35B6A352072A71E0075E822 /* LaunchScreen.storyboard */,
 				C35B6A382072A71E0075E822 /* Info.plist */,
-				C3018CFA209C9EF400C2BB72 /* Observer.swift */,
 			);
 			path = restApiJson;
 			sourceTree = "<group>";
@@ -362,12 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35B6A73207FB2250075E822 /* Person.swift in Sources */,
-				C3018CFB209C9EF400C2BB72 /* Observer.swift in Sources */,
 				C35B6A7720815FE90075E822 /* PersonsViewController.swift in Sources */,
 				C35B6A7620815FE90075E822 /* SimplePersonsViewController.swift in Sources */,
 				C36DEB2D2086236D00D3BCD8 /* PersonEditionViewController.swift in Sources */,
 				C35B6A2F2072A71E0075E822 /* ViewController.swift in Sources */,
+				C3018D0120A51F8C00C2BB72 /* ObserverPatternProtocols.swift in Sources */,
 				C35B6A2D2072A71E0075E822 /* AppDelegate.swift in Sources */,
+				C3018D0020A51F8C00C2BB72 /* JSONData.swift in Sources */,
 				C35B6A71207FB2050075E822 /* AppDatabase.swift in Sources */,
 				C35B6A5B2075018D0075E822 /* SqliteToJson.swift in Sources */,
 			);
